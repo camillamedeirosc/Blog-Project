@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <meta name="description" content="A blog about travel and gastronomy">
+    <meta name="author" content="Camilla Medeiros">
+</head>
+<body>
+    <header>
+        <h1>Taqueando Ando</h1>
+        <p>Everything that you always wanted to know about Travel and Gastronomy</p>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="form.html">CONTACT FORM</a>
+    </nav>
+    <form action="#" method="get">  
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+        <label for="email">Email Input:</label>
+        <input id="email" name="email" type="email"><br>
+        <label for="comment">Leave your comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <p>Do you want a response to your comment?</p>
+        <input type="radio" id="yes" name="response" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="response" value="no">
+        <label for="no">No</label>
+        <fieldset>
+            <legend>What is Your Favorite Type of Travel?</legend>
+            <input type="radio" name="favorite_travel" value="Solo" checked>Solo Travel<br>
+            <input type="radio" name="favorite_travel" value="Family">Family Travel<br>
+            <input type="radio" name="favorite_travel" value="Friends">Travel with Friends<br>
+            <input type="radio" name="favorite_travel" value="Group">Travel with a Group<br>
+            <input type="radio" name="favorite_travel" value="Luxury">Luxury Travel<br>
+            <input type="radio" name="favorite_travel" value="Adventure">Adventure Travel<br>
+        </fieldset>
+        <fieldset>
+            <legend>What Kind of Foods Do You Like while travelling?</legend>
+            <input type="checkbox" name="food" value="Street Food" checked>Street Food<br>
+            <input type="checkbox" name="food" value="Restaurants">Restaurants<br>
+            <input type="checkbox" name="food" value="Snacks">Snacks<br>
+        </fieldset>
+        <label for="destination">Choose a destination:</label>
+        <select id="destination">
+            <option value="europe">Europe</option>
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="north-america">North America</option>
+            <option value="south-america">South America</option>
+            <option value="oceania">Oceania</option>
+        </select>
+        <button type="submit" formmethod="post">Submit</button>
+    </form>
+</body>
+</html>
